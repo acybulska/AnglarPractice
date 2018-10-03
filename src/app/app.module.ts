@@ -1,16 +1,27 @@
 import { BrowserModule } from '@angular/platform-browser';
+import { FormsModule } from '@angular/forms';
 import { NgModule } from '@angular/core';
 
 import { AppComponent } from './app.component';
+import { ListService } from './list.service';
+import { StarComponent } from './star/star.component';
+import { PipeComponent } from './pipe/pipe.component';
+import { TitlePipe } from './title.pipe';
 
 @NgModule({
   declarations: [
-    AppComponent
+    AppComponent,
+    StarComponent,
+    PipeComponent,
+    TitlePipe
   ],
   imports: [
-    BrowserModule
+    BrowserModule,
+    FormsModule
   ],
-  providers: [],
+  providers: [
+    ListService
+  ],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

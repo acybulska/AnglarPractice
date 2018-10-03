@@ -1,3 +1,7 @@
+Excercises from Udemy course The Complete Angular Master Class
+udemy.com/the-complete-angular-master-class
+
+
 # AngularPractice
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 7.0.0-rc.1.

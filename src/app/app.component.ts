@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { ListService } from './list.service';
 
 @Component({
   selector: 'app-root',
@@ -6,5 +7,17 @@ import { Component } from '@angular/core';
   styleUrls: ['./app.component.css']
 })
 export class AppComponent {
-  title = 'AngularPractice';
+  title = 'Angular';
+  subtitle = 'List of authors';
+  authors;
+
+  post = { title: "Title", isFave: true }
+
+  constructor(service: ListService) {
+    this.authors = service.getAuthors();
+  }
+
+  onChangedStar(isFave) {
+    console.log("Button changed", isFave);
+  }
 }
