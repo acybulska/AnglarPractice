@@ -11,13 +11,13 @@ export class AppComponent {
   subtitle = 'List of authors';
   authors;
 
-  post = { title: "Title", isFave: true }
+  post = { title: "Title", isFave: false }
 
   constructor(service: ListService) {
     this.authors = service.getAuthors();
   }
 
   onChangedStar(isFave) {
-    console.log("Button changed", isFave);
+    isFave ? console.log("Like") : console.log("Dislike")
   }
 }

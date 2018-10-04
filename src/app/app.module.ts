@@ -7,13 +7,17 @@ import { ListService } from './list.service';
 import { StarComponent } from './star/star.component';
 import { PipeComponent } from './pipe/pipe.component';
 import { TitlePipe } from './title.pipe';
+import { InputFormatDirective } from './input-format.directive';
+import { ZippyComponent } from './zippy/zippy.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     StarComponent,
     PipeComponent,
-    TitlePipe
+    TitlePipe,
+    InputFormatDirective,
+    ZippyComponent
   ],
   imports: [
     BrowserModule,

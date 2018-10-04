@@ -9,7 +9,7 @@ export class StarComponent implements OnInit {
 
   @Input() isFavourite: boolean;
   @Output() change = new EventEmitter();
-
+  likesCounter = 0;
   constructor() { }
 
   ngOnInit() {
@@ -18,5 +18,6 @@ export class StarComponent implements OnInit {
   onClick() {
     this.isFavourite = !this.isFavourite;
     this.change.emit(this.isFavourite);
+    this.isFavourite === true ? this.likesCounter++ : this.likesCounter--
   }
 }

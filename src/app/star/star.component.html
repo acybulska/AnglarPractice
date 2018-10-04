@@ -1,1 +1,2 @@
-<button type="button" class="btn btn-lg" [class.btn-success]="isFavourite" [class.btn-danger]="!isFavourite" (click)="onClick()">Star</button>
+<button id="isFave" type="button" class="btn btn-sm" [class.btn-success]="isFavourite" [class.btn-danger]="!isFavourite" (click)="onClick()">♥</button>
+<span style="padding: 5px;">{{likesCounter}}</span>
