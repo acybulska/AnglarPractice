@@ -9,6 +9,7 @@ import { PipeComponent } from './pipe/pipe.component';
 import { TitlePipe } from './title.pipe';
 import { InputFormatDirective } from './input-format.directive';
 import { ZippyComponent } from './zippy/zippy.component';
+import { ContactFormComponent } from './contact-form/contact-form.component';
 
 @NgModule({
   declarations: [
@@ -17,7 +18,8 @@ import { ZippyComponent } from './zippy/zippy.component';
     PipeComponent,
     TitlePipe,
     InputFormatDirective,
-    ZippyComponent
+    ZippyComponent,
+    ContactFormComponent
   ],
   imports: [
     BrowserModule,
